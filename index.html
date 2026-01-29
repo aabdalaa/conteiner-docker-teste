@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EU E VOCÊ ❤️</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="audio-btn" onclick="toggleAudio()">🔊</button>
+    <audio id="audio" loop>
+        <source src="musica.mp3" type="audio/mp3">
+    </audio>     
+    <header>
+        <h1>Eu e Você ❤️</h1>
+        <p>Uma Homenagem à Nossa Jornada Juntos.</p>
+    </header>
+
+    <section class="gallery">
+        <h2>Alguns Momentos Especiais Com Você:</h2>
+        <div class="photo-gallery">
+            <div class="photo-box" style="background-image: url('amor1.jpeg');" onclick="openImage('amor1.jpeg');"></div>
+            <div class="photo-box" style="background-image: url('amor2.jpeg');" onclick="openImage('amor2.jpeg');"></div>
+            <div class="photo-box" style="background-image: url('amor3.jpeg');" onclick="openImage('amor3.jpeg');"></div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox" onclick="closeImage()">
+        <span id="close-btn" class="close-btn" onclick="closeImage()">X</span>
+        <img id="lightbox-img" src="" alt="Foto Ampliada">
+    </div>
+
+    <section class="counter">
+        <h2>Estamos Juntos Há:</h2>
+        <div class="digital-clock">
+            <div class="time-section">
+                <div class="label">Dias</div>
+                <div class="digit-group" id="days"></div>
+            </div>
+            <div class="time-section">
+                <div class="label">Horas</div>
+                <div class="digit-group" id="hours"></div>
+            </div>
+            <div class="time-section">
+                <div class="label">Minutos</div>
+                <div class="digit-group" id="minutes"></div>
+            </div>
+            <div class="time-section">
+                <div class="label">Segundos</div>
+                <div class="digit-group" id="seconds"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="more-moments">
+        <h2>Mais Alguns Momentos Nossos ❤️</h2>
+        <div class="photo-gallery">
+            <div class="photo-box" style="background-image: url('amor4.jpeg');" onclick="openImage('amor4.jpeg');"></div>
+            <div class="photo-box" style="background-image: url('amor5.jpeg');" onclick="openImage('amor5.jpeg');"></div>
+            <div class="photo-box" style="background-image: url('amor6.jpeg');" onclick="openImage('amor6.jpeg');"></div>
+        </div>
+        <button id="reveal-message-btn" onclick="revealMessage()">CLIQUE AQUI</button>
+        <p id="hidden-message" style="display: none;">
+            <button id="close-message-btn" onclick="closeMessage()">X</button>
+            PARA A MINHA PRINCESA,<br><br>
+            EU SÓ QUERO QUE VOCÊ SAIBA O QUANTO SOU FELIZ POR TER VOCÊ AO MEU LADO. CADA MOMENTO COM VOCÊ É ESPECIAL E ME FAZ PERCEBER O QUANTO SOU GRATO POR NOSSA HISTÓRIA JUNTOS. SEU SORRISO ILUMINA MEUS DIAS E O SEU AMOR É TUDO O QUE EU PRECISO. EU TE AMO DEMAIS, MAIS DO QUE VOCÊ SERIA CAPAZ DE IMAGINAR, VOCÊ FAZ PARTE DE MIM E EU ESPERO SER ASSIM PARA VOCÊ TAMBÉM! <BR></BR> EU TEEEEE AMOOOOOOOOO! <br><br>
+            SEMPRE SEU,<br>
+            ANDRÉ ABDALA. ❤️💍
+        </p>               
+    </section>
+
+    <button id="back-to-top" onclick="scrollToTop()">⬆️</button>
+    
+    <section class="last-moments">
+        <h2>Momentos Finais 💕</h2>
+        <div class="photo-gallery">
+            <div class="photo-box" style="background-image: url('amor7.jpeg');" onclick="openImage('amor7.jpeg');"></div>
+            <div class="photo-box" style="background-image: url('amor8.jpeg');" onclick="openImage('amor8.jpeg');"></div>
+            <div class="photo-box" style="background-image: url('amor9.jpeg');" onclick="openImage('amor9.jpeg');"></div>
+        </div>
+    </section>
+    <section class="question">
+        <h2>Quer viver comigo para todo o sempre?</h2>
+        <button id="yes-btn">Sim</button>
+        <button id="no-btn">Não</button>
+    </section>        
+
+    <section>
+        <h2>AMOR, AGORA PRECISO QUE VOCÊ ESPERE ATÉ 12/06/2026 💍❤️</h2>
+    </section>
+
+    <section id="proposal-section" style="display: none;">
+        <h2>CLIQUE NO BOTÃO ABAIXO 💍❤️</h2>
+        <button onclick="window.location.href = 'CASAMENTO/index.html';">Ir para o site</button>
+    </section>
+
+    <p id="final-message" style="display: none;">Volte em 12/06/2026 para mais surpresas! 🌟</p>
+
+    <script src="script.js"></script>
+</body>
+</html>
